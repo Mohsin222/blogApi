@@ -122,7 +122,7 @@ app.use('/auth', authRoutes);
 const server = app.listen(Port,()=>{
     console.log(`Server is running at ${Port}`)
 })
-const io= require('socket.io')(server)
-io.on('Connection',socket =>{
-  console.log('Client Connected')
-})
+// const io= require('socket.io')(server)
+// io.on('Connection',socket =>{
+//   console.log('Client Connected')
+// })
