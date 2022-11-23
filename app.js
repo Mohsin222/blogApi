@@ -103,15 +103,23 @@ const fileFilter = (req, file, cb) => {
   });
   
 
-mongoose.connect("mongodb://localhost:27017/course_api", {
+// mongoose.connect("mongodb://localhost:27017/course_api", {
 
-  })
-  .then(result => {
- console.log('Connection successfull');
-  }).catch(err =>{
-    console.log('Connection ERROR')
-  })
+//   })
+//   .then(result => {
+//  console.log('Connection successfull');
+//   }).catch(err =>{
+//     console.log('Connection ERROR')
+//   })
 
+
+mongoose.connect('mongodb+srv://mohsin:123@cluster0.xgm3y.mongodb.net/blog_database')
+.then( ()=>{
+    console.log('Connection is ready')
+})
+.catch( (err)=>{
+    console.log(err)
+})
 
 
 //routes
