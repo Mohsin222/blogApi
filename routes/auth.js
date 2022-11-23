@@ -4,6 +4,10 @@ const { body } = require('express-validator');
 const authController = require('../controllers/auth');
 const user = require('../models/user');
 
+router.get('/',(req,res)=>{
+    res.send('JHE:A:DA:F:F:FA')
+})
+
 
 router.put('/signup',[
     body('email')
